@@ -1527,7 +1527,7 @@ heading page
 */
 
 section.heading-page {
-  background-image: url(../images/heading-bg.jpg);
+  background-image: url(../images/mision&vision.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1536,7 +1536,7 @@ section.heading-page {
   text-align: center;
 }
 
-section.heading-page h6 {
+section.heading-page h4 {
   margin-top: 0px;
   font-size: 15px;
   text-transform: uppercase;
@@ -1545,7 +1545,81 @@ section.heading-page h6 {
   letter-spacing: 1px;
 }
 
-section.heading-page h2 {
+section.heading-page h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+
+/*
+---------------------------------------------
+imagen visión
+---------------------------------------------
+*/
+
+section.imagen-visión {
+  background-image: url(../images/vision_genesaret.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 110px;
+  text-align: center;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+section.imagen-visión h6 {
+  margin-top: 0px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+section.imagen-visión h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 1px;
+}
+/*
+---------------------------------------------
+imagen visión
+---------------------------------------------
+*/
+
+section.imagen-mision {
+  background-image: url("../images/misión-genesaret.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 110px;
+  text-align: center;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+section.imagen-mision h6 {
+  margin-top: 0px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+section.imagen-mision h2 {
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 36px;
