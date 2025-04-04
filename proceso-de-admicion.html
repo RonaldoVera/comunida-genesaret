@@ -1,54 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Template Mo">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Template Mo">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <title>Education Template - Meeting Detail Page</title>
+  <title>Education Template - Meeting Detail Page</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/lightbox.css">
-<!--
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/lightbox.css">
+  <!--
 
 TemplateMo 569 Edu Meeting
 
 https://templatemo.com/tm-569-edu-meeting
 
--->
-  </head>
+-->  
+
+<style>
+  .matricula-2025-section {
+    background-image: url("../assets/images/meetings-page-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #1f272b;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 36px;
+    color: #a12c2f;
+    margin-bottom: 10px;
+  }
+
+  .section-subtitle {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .highlight-box {
+    background: #fff;
+    border-left: 6px solid #a12c2f;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .highlight-box ol {
+    padding-left: 20px;
+  }
+
+  .btn-form {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #a12c2f;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .btn-form:hover {
+    background-color: #871e22;
+  }
+
+  .alert {
+    background-color: #ffe8e8;
+    padding: 10px 15px;
+    border-left: 5px solid #a12c2f;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+
+  .info-cards-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .card-soft {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    flex: 1;
+    min-width: 260px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  .card-soft h4 {
+    color: #a12c2f;
+    margin-bottom: 10px;
+  }
+
+  .note {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+  }
+
+  .decorative-box {
+    background: #fff9f3;
+    border-left: 4px solid #ffa600;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+
+  .details-row {
+    background: #fff9f3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+
+  .details-column {
+    flex: 1;
+    min-width: 260px;
+  }
+
+  .contact-box {
+    background: #eaf4ff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .community-section {
+    background-color: #fff;
+    padding: 30px;
+    border-left: 6px solid #50a475;
+    border-radius: 12px;
+    text-align: center;
+  }
+
+  /* NUEVA SECCIÓN: tabla de costos */
+  .tabla-costos {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto 40px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .fila-costos {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .fila-costos:last-child {
+    border-bottom: none;
+  }
+
+  .etiqueta {
+    font-weight: bold;
+    color: #a12c2f;
+  }
+
+  .valor {
+    color: #1f272b;
+  }
+</style>
+
+</head>
 
 <body>
 
-   
 
   <!-- Sub Header -->
   <div class="sub-header">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-sm-8">
-          <div class="left-content">
-            <p>This is an educational <em>HTML CSS</em> template by TemplateMo website.</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-4">
+        <div class="col-lg-12 col-sm-4 ">
           <div class="right-icons">
             <ul>
               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-behance"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
             </ul>
           </div>
         </div>
@@ -58,42 +209,36 @@ https://templatemo.com/tm-569-edu-meeting
 
   <!-- ***** Header Area Start ***** -->
   <header class="header-area header-sticky">
-      <div class="container">
-          <div class="row">
-              <div class="col-12">
-                  <nav class="main-nav">
-                      <!-- ***** Logo Start ***** -->
-                      <a href="index.html" class="logo">
-                          Edu Meeting
-                      </a>
-                      <!-- ***** Logo End ***** -->
-                      <!-- ***** Menu Start ***** -->
-                      <ul class="nav">
-                          <li><a href="index.html">Home</a></li>
-                          <li><a href="meetings.html" class="active">Meetings</a></li>
-                          <li><a href="index.html">Apply Now</a></li>
-                          <li class="has-sub">
-                              <a href="javascript:void(0)">Pages</a>
-                              <ul class="sub-menu">
-                                  <li><a href="meetings.html">Upcoming Meetings</a></li>
-                                  <li><a href="meeting-details.html">Meeting Details</a></li>
-                              </ul>
-                          </li>
-                          <li><a href="index.html">Courses</a></li> 
-                          <li><a href="index.html">Contact Us</a></li> 
-                      </ul>        
-                      <a class='menu-trigger'>
-                          <span>Menu</span>
-                      </a>
-                      <!-- ***** Menu End ***** -->
-                  </nav>
-              </div>
-          </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <div href="index.html" class="logo">
+              <img src="assets\images\logo-transparente.png" alt="Comunidad Estudiantil Genesaret">
+            </div>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#top" class="active">INICIO</a></li>
+              <li><a href="proceso-de-admicion.html">ADMISIÓN</a></li>
+              <li class="scroll-to-section"><a href="#conocenos">CONOCENOS</a></li>
+              <li class="scroll-to-section"><a href="#equipo">NUESTRO EQUIPO</a></li>
+              <li class="scroll-to-section"><a href="#courses">MÉTODOLOGIA</a></li>
+              <li><a href="mision-y-vision.html">MISIÓN Y VISIÓN</a></li>
+              <li class="scroll-to-section"><a href="#contact">CONTACTO</a></li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
       </div>
+    </div>
   </header>
-  <!-- ***** Header Area End ***** -->
 
-  <section class="heading-page header-text" id="top">
+  <section class="imagen-admision header-text" id="top">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -104,242 +249,194 @@ https://templatemo.com/tm-569-edu-meeting
     </div>
   </section>
 
-  <section class="meetings-page" id="misionyvision">
+  <section class="matricula-2025-section">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="meeting-single-item">
-                <div class="thumb">
-             
-                  <section class="imagen-visión header-text">
-                    <h2>COMENZÓ PROCESO DE MATRÍCULA 2025</h2>
-                  </section>
-                </div>
-                <div class="down-content">
-                  <!-- <p><h4>Online Teaching and Learning Tools</h4></p>
-                  <p>Recreio dos Bandeirantes, Rio de Janeiro - RJ, 22795-008, Brazil</p> -->
-                  <p class="description text-center">
-                    <strong>
-                      Ser una comunidad educativa comprometida en formar personas íntegras que amen a Dios sobre todas las cosas, restaurando
-                      relaciones esenciales con Dios, el prójimo, la naturaleza y consigo mismos. Aspiramos a ser un oasis de restauración y
-                      un refugio de fe, donde estudiantes y familias, guiados por un modelo bíblico, sean preparados en espíritu, alma y
-                      cuerpo para glorificar a Dios, servir con excelencia a la comunidad y vivir conforme a principios divinos.
-
-                    </strong>
-
-                  </p>
-                  <!-- <div class="row">
-                    <div class="col-lg-4">
-                      <div class="hours">
-                        <h5>Hours</h5>
-                        <p>Monday - Friday: 07:00 AM - 13:00 PM<br>Saturday- Sunday: 09:00 AM - 15:00 PM</p>
-                      </div>
-                    </div>
-                    <div class="col-lg-4">
-                      <div class="location">
-                        <h5>Location</h5>
-                        <p>Recreio dos Bandeirantes, 
-                        <br>Rio de Janeiro - RJ, 22795-008, Brazil</p>
-                      </div>
-                    </div>
-                    <div class="col-lg-4">
-                      <div class="book now">
-                        <h5>Book Now</h5>
-                        <p>010-020-0340<br>090-080-0760</p>
-                      </div>
-                    </div>
-                    <div class="col-lg-12">
-                      <div class="share">
-                        <h5>Share:</h5>
-                        <ul>
-                          <li><a href="#">Facebook</a>,</li>
-                          <li><a href="#">Twitter</a>,</li>
-                          <li><a href="#">Linkedin</a>,</li>
-                          <li><a href="#">Behance</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div> -->
-                </div>
-              </div>
+      
+      <!-- Título principal -->
+      <h2 class="section-title">📚 Proceso de Matrícula 2025</h2>
+      <p class="section-subtitle">Bienvenidos al proceso de admisión de nuestra comunidad educativa. A continuación, te contamos todo lo que necesitas saber para postular a tu hijo/a.</p>
+      
+      <!-- Bloque: Postulación -->
+      <div class="highlight-box">
+        <h3>📝 ¿Cómo postular?</h3>
+        <p>Las vacantes son limitadas. Para iniciar el proceso debes:</p>
+        <ol>
+          <li>Completar el formulario de postulación (uno por postulante).</li>
+          <li>Asistir a una entrevista personal (serás citado al contacto entregado).</li>
+        </ol>
+        <a href="https://forms.gle/ACosdvhdQcYQJf6ZA" target="_blank" class="btn-form">👉 Completar formulario</a>
+        <p class="alert">⚠️ Sólo se considerarán postulaciones con ambos pasos completos. Formularios sin entrevista serán considerados nulos.</p>
+      </div>
+  
+      <!-- Sección visual con cards -->
+      <div class="info-cards-row">
+        <!-- Card 1 -->
+        <div class="card-soft">
+          <h4>🎯 Consideraciones</h4>
+          <ul>
+            <li>No contamos con cupos para NEE ni equipo PIE.</li>
+            <li>Para prekínder, el niño debe tener 4 años cumplidos al 31 de marzo de 2025.</li>
+          </ul>
+        </div>
+        <!-- Card 2 -->
+        <div class="card-soft">
+          <h4>📅 Fechas y Cupos</h4>
+          <p>Abierto hasta completar vacantes disponibles:</p>
+          <ul>
+            <li><strong>Pre-Kínder:</strong> 5 vacantes</li>
+            <li><strong>Kínder:</strong> 4 vacantes</li>
+            <li><strong>6° Básico:</strong> 2 vacantes</li>
+            <li><strong>8° Básico:</strong> 5 vacantes</li>
+            <li><strong>3° Medio:</strong> 5 vacantes</li>
+          </ul>
+          <p class="note">⚠️ No hay vacantes de 1° a 5° básico. Puedes postular para lista de espera.</p>
+        </div>
+      </div>
+  
+      <!-- Lista de espera en sección decorativa -->
+      <div class="decorative-box">
+        <h3>⏳ Lista de espera</h3>
+        <p>Si se libera alguna vacante, se contactará a las familias según el orden de postulación.</p>
+      </div>
+  
+      <!-- Detalles generales -->
+      <div class="details-row">
+        <div class="details-column">
+          <h4>📘 Detalles Generales</h4>
+          <ul>
+            <li>Jornada: 9:00 a 14:00 hrs.</li>
+            <li>Modalidad: Exámenes libres.</li>
+            <li>Multigrado según matrícula.</li>
+            <li>Máximo 20 alumnos por sala.</li>
+            <li>Talleres de discipulado y actividades extracurriculares.</li>
+          </ul>
+        </div>
+        <div class="details-column">
+          <h4>💰 Valores 2025</h4>
+          <br>
+          <div class="tabla-costos">
+            <div class="fila-costos">
+              <span class="etiqueta">Matrícula:</span>
+              <span class="valor">$150.000</span>
             </div>
-            <!-- <div class="col-lg-12">
-              <div class="main-button-red">
-                <a href="meetings.html">Back To Meetings List</a>
-              </div>
-            </div> -->
+            <div class="fila-costos">
+              <span class="etiqueta">Mensualidad:</span>
+              <span class="valor">$150.000</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="meeting-single-item">
-                <div class="thumb">
-             
-                  <section class="imagen-visión header-text">
-                    <h2>Nuestra Misión</h2>
-                  </section>
-                </div>
-                <div class="down-content">
-                  <!-- <p><h4>Online Teaching and Learning Tools</h4></p>
-                  <p>Recreio dos Bandeirantes, Rio de Janeiro - RJ, 22795-008, Brazil</p> -->
-                  <p class="description text-center">
-                    <strong>
-                      Como Comunidad Genesaret, educamos integralmente a estudiantes mediante una formación centrada en principios bíblicos y
-                      excelencia académica, potenciando su desarrollo espiritual, académico y valórico. Trabajamos en alianza con familias
-                      comprometidas, quienes asumen su responsabilidad en los procesos formativos del estudiante, fortaleciendo su disciplina,
-                      conducta y apoyo diario. Nuestro objetivo es equipar a cada alumno para descubrir sus dones, talentos y habilidades,
-                      preparándolos para impactar positivamente en su entorno y glorificar a Dios en todo lo que hacen.
-
-                    </strong>
-                  </p>
-                  <!-- <div class="row">
-                    <div class="col-lg-4">
-                      <div class="hours">
-                        <h5>Hours</h5>
-                        <p>Monday - Friday: 07:00 AM - 13:00 PM<br>Saturday- Sunday: 09:00 AM - 15:00 PM</p>
-                      </div>
-                    </div>
-                    <div class="col-lg-4">
-                      <div class="location">
-                        <h5>Location</h5>
-                        <p>Recreio dos Bandeirantes, 
-                        <br>Rio de Janeiro - RJ, 22795-008, Brazil</p>
-                      </div>
-                    </div>
-                    <div class="col-lg-4">
-                      <div class="book now">
-                        <h5>Book Now</h5>
-                        <p>010-020-0340<br>090-080-0760</p>
-                      </div>
-                    </div>
-                    <div class="col-lg-12">
-                      <div class="share">
-                        <h5>Share:</h5>
-                        <ul>
-                          <li><a href="#">Facebook</a>,</li>
-                          <li><a href="#">Twitter</a>,</li>
-                          <li><a href="#">Linkedin</a>,</li>
-                          <li><a href="#">Behance</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div> -->
-                </div>
-              </div>
-            </div>
-            <!-- <div class="col-lg-12">
-              <div class="main-button-red">
-                <a href="meetings.html">Back To Meetings List</a>
-              </div>
-            </div> -->
-          </div>
-        </div>
+  
+      <!-- Contacto -->
+      <div class="contact-box">
+        <h3>📞 ¿Dudas o consultas?</h3>
+        <p>Contáctanos vía WhatsApp:</p>
+        <p>+569 75 18 39 21<br>+569 67 31 15 40</p>
       </div>
-    </div>
-    <div class="footer">
-      <p>Copyright © 2022 Edu Meeting Co., Ltd. All Rights Reserved. 
-          <br>
-          Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a>
-          <br>
-          Distibuted By: <a href="https://themewagon.com" target="_blank" title="Build Better UI, Faster">ThemeWagon</a>
-        </p>
+  
+      <!-- Cierre comunidad -->
+      <div class="community-section">
+        <h3>🌱 Comunidad Genesaret</h3>
+        <p>Educando con propósito. Estudios validados (Decreto 2272 del Mineduc), contenidos exigibles según currículo nacional y enfoque integral con valores cristianos.</p>
+      </div>
     </div>
   </section>
+  
+
+
+
 
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/lightbox.js"></script>
-    <script src="assets/js/tabs.js"></script>
-    <script src="assets/js/video.js"></script>
-    <script src="assets/js/slick-slider.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script>
-        //according to loftblog tut
-        $('.nav li:first').addClass('active');
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/lightbox.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/video.js"></script>
+  <script src="assets/js/slick-slider.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script>
+    //according to loftblog tut
+    $('.nav li:first').addClass('active');
 
-        var showSection = function showSection(section, isAnimate) {
+    var showSection = function showSection(section, isAnimate) {
+      var
+        direction = section.replace(/#/, ''),
+        reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+        reqSectionPos = reqSection.offset().top - 0;
+
+      if (isAnimate) {
+        $('body, html').animate({
+          scrollTop: reqSectionPos
+        },
+          800);
+      } else {
+        $('body, html').scrollTop(reqSectionPos);
+      }
+
+    };
+
+    var checkSection = function checkSection() {
+      $('.section').each(function () {
+        var
+          $this = $(this),
+          topEdge = $this.offset().top - 80,
+          bottomEdge = topEdge + $this.height(),
+          wScroll = $(window).scrollTop();
+        if (topEdge < wScroll && bottomEdge > wScroll) {
           var
-          direction = section.replace(/#/, ''),
-          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
-          reqSectionPos = reqSection.offset().top - 0;
+            currentId = $this.data('section'),
+            reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+          reqLink.closest('li').addClass('active').
+            siblings().removeClass('active');
+        }
+      });
+    };
 
-          if (isAnimate) {
-            $('body, html').animate({
-              scrollTop: reqSectionPos },
-            800);
-          } else {
-            $('body, html').scrollTop(reqSectionPos);
-          }
+    $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+      e.preventDefault();
+      showSection($(this).attr('href'), true);
+    });
 
-        };
+    $(window).scroll(function () {
+      checkSection();
+    });
+  </script>
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
 
-        var checkSection = function checkSection() {
-          $('.section').each(function () {
-            var
-            $this = $(this),
-            topEdge = $this.offset().top - 80,
-            bottomEdge = topEdge + $this.height(),
-            wScroll = $(window).scrollTop();
-            if (topEdge < wScroll && bottomEdge > wScroll) {
-              var
-              currentId = $this.data('section'),
-              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
-              reqLink.closest('li').addClass('active').
-              siblings().removeClass('active');
-            }
-          });
-        };
+    .hero {
+      background: url('https://source.unsplash.com/1600x900/?school') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
 
-        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
-          e.preventDefault();
-          showSection($(this).attr('href'), true);
-        });
+    .card {
+      border-radius: 10px;
+    }
 
-        $(window).scroll(function () {
-          checkSection();
-        });
-    </script>
-     <style>
-      body {
-          background-color: #f8f9fa;
-      }
-      .hero {
-          background: url('https://source.unsplash.com/1600x900/?school') no-repeat center center/cover;
-          color: white;
-          text-align: center;
-          padding: 100px 20px;
-      }
-      .card {
-          border-radius: 10px;
-      }
-      .cta-button {
-          background-color: #007bff;
-          color: white;
-          padding: 10px 20px;
-          border-radius: 5px;
-          text-decoration: none;
-          font-weight: bold;
-      }
-      .cta-button:hover {
-          background-color: #0056b3;
-          color: white;
-      }
+    .cta-button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .cta-button:hover {
+      background-color: #0056b3;
+      color: white;
+    }
   </style>
-</head>
+  </head>
 
 </body>
 
